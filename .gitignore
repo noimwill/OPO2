@@ -1,0 +1,159 @@
+# OPO2 Project .gitignore
+
+#######################################
+# Python / Django
+#######################################
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+#######################################
+# JavaScript / React / Node.js
+#######################################
+# Dependencies
+node_modules/
+jspm_packages/
+bower_components/
+
+# Testing
+coverage/
+.nyc_output
+
+# Production build files
+frontend/build/
+frontend/dist/
+
+# Env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.npm
+.eslintcache
+.node_repl_history
+
+#######################################
+# Foundry / Solidity
+#######################################
+# Foundry output
+contracts/out/
+contracts/cache/
+contracts/bin/
+contracts/broadcast/
+
+# Deps
+contracts/lib/
+contracts/node_modules/
+
+# Hardhat files (if ever used alongside)
+artifacts/
+typechain/
+typechain-types/
+
+# Secret env files
+.env
+.env.secrets
+.secret
+
+#######################################
+# IDE & Editors
+#######################################
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+#######################################
+# OS generated files
+#######################################
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+#######################################
+# Misc
+#######################################
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+.tmp/
+temp/
+tmp/
+logs/
