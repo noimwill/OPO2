@@ -8,9 +8,14 @@ from .serializers import WalletAddressSerializer, TokenBalanceSerializer
 from web3 import Web3
 import json
 import os
+from django.conf import settings
 
-# Connect to Ethereum node - using Infura as an example
-INFURA_URL = 'https://mainnet.infura.io/v3/f4c52ed8e143438fb233ab614c3717ff'
+# Import the env object from Django's settings
+from crypto_portfolio.settings import env
+
+# Use the environment variable for Infura key
+INFURA_KEY = env('INFURA_KEY')
+INFURA_URL = f'https://mainnet.infura.io/v3/{INFURA_KEY}'
 w3 = Web3(Web3.HTTPProvider(INFURA_URL))
 
 class WalletViewSet(viewsets.ModelViewSet):
